@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 :root {
     /*      Primary         */
@@ -6,12 +7,242 @@
     --bright-cyan: hsl(192, 70%, 51%);
 
     /*      Neutral         */
-    --dark-blue: hsl(233, 8%, 62%);
+    --grayish-blue: hsl(233, 8%, 62%);
     --light-grayish-blue: hsl(220, 16%, 96%);
     --vary-light-gray: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);
+
+    /*      font - family       */
+    --font-family: 'Public Sans', sans-serif;
 }
 
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3, h4, h5 {
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 31px;
+}
+
+h4 {
+    font-size: 25px;
+
+}
+
+h5 {
     font-size: 18px;
+    margin-top: 10px;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.open {
+    right: 0;
+}
+
+/*          HEADER          */
+
+.header {
+    width: 100%;
+    height: 45px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-toggle {
+    display: flex;
+}
+
+.hamburger--open {
+    background-image: url('../img/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 14px;
+}
+
+.hamburger--close {
+    background-image: url('../img/icon-close.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+}
+
+.header-navbar {
+    position: absolute;
+    top: 45px;
+    right: -375px;
+    width: 100%;
+    height: 450px;
+    background-color: var(--dark-blue);
+    transition-property: right;
+    transition-duration: 0.5s;
+}
+
+.header-navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.header-navbar ul li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/*      PRINCIPAL          */
+.principal {
+    background-color: var(--grayish-blu);
+    padding-bottom: 40px;
+}
+
+.principal-into {
+    height: 275px;
+    overflow: hidden;
+    background-image: url('../img/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.principal-img {
+    width: 100%;
+    margin-top: -120px;
+    padding: 0 20px;
+}
+
+.principal-text {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.btn-invite {
+    display: inline-block;
+    background-image: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+    color: var(--light-grayish-blue);
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+/*      BENEFITS        */
+
+.benefits {
+    background-color: var(--light-grayish-blue);
+    padding: 15% 25px;
+    text-align: center;
+}
+
+.benefit-img {
+    padding: 20px 0;
+}
+
+/*      ARTICLES        */
+
+.articles {
+    padding: 15% 25px;
+    background-color: var(--vary-light-gray);
+}
+
+.article-title {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.article-img {
+    width: 100%;
+    display: block;
+}
+
+.article-content {
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+
+.author {
+    color: var(--grayish-blue);
+    font-size: 12px;
+    padding: 15px 0;
+}
+
+/*      footer      */
+
+.footer {
+    background-color: var(--dark-blue);
+    padding: 25px;
+}
+
+.social-medias {
+
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.social-media {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook {
+    background-image: url('../img/icon-facebook.svg');
+}
+
+.youtube {
+    background-image: url('../img/icon-youtube.svg');
+}
+
+.twitter {
+    background-image: url('../img/icon-twitter.svg');
+}
+
+.pinterest {
+    background-image: url('../img/icon-pinterest.svg');
+}
+
+.instagram {
+    background-image: url('../img/icon-instagram.svg');
+}
+
+.footer-navbar ul{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-navbar ul li a {
+    color: var(--vary-light-gray);
+}
+
+.footer-content {
+    text-align: center;
 }
