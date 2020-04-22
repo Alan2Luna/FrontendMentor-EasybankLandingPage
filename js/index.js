@@ -14,7 +14,7 @@ buttonHamb.addEventListener("click", function() {
         buttonHamb.className = "hamburger--open";
         setTimeout(() => {
             navbar.style.display = "none";
-        }  ,500);
-        navbar.style.right = "-375px";
+        }  ,1200);
+        navbar.style.right = "-426px";
     }
 });

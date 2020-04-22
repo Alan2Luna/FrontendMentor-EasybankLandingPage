@@ -14,6 +14,9 @@
 
     /*      font - family       */
     --font-family: 'Public Sans', sans-serif;
+
+    /*   container   */
+    --padding: 7%;
 }
 
 * {
@@ -65,7 +68,7 @@ p {
 .header {
     width: 100%;
     height: 50px;
-    padding: 0 25px;
+    padding: 0 var(--padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,12 +96,13 @@ p {
     display: none;
     position: absolute;
     top: 50px;
-    right: -375px;
+    right: -426px;
     width: 100%;
     height: 500px;
     background-image: linear-gradient(to bottom, var(--dark-blue), transparent);
     transition-property: right;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .header-navbar ul {
@@ -118,6 +122,10 @@ p {
     text-align: center;
 }
 
+.header-btn {
+    display: none;
+}
+
 /*      PRINCIPAL          */
 .principal {
     background-color: var(--grayish-blu);
@@ -125,21 +133,22 @@ p {
 }
 
 .principal-into {
-    height: 275px;
+    width: 100%;
     overflow: hidden;
     background-image: url('../img/bg-intro-mobile.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 
 .principal-img {
     width: 100%;
     margin-top: -120px;
-    padding: 0 20px;
+    padding: 0 var(--padding);
 }
 
 .principal-text {
-    padding: 30px 25px;
+    padding: 30px var(--padding);
     text-align: center;
 }
 
@@ -156,7 +165,7 @@ p {
 
 .benefits {
     background-color: var(--light-grayish-blue);
-    padding: 15% 25px;
+    padding: 15% var(--padding);
     text-align: center;
 }
 
@@ -167,7 +176,7 @@ p {
 /*      ARTICLES        */
 
 .articles {
-    padding: 15% 25px;
+    padding: 15% var(--padding);
     background-color: var(--vary-light-gray);
 }
 
