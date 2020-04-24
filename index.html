@@ -13,7 +13,17 @@
         <div class="header-toggle">
             <span id="button-toggle" class="hamburger--open" href="/"></span>
         </div>
-        <nav id="navbar" class="header-navbar">
+        <nav id="navbar-mobil" class="header-navbarMobil">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </nav>
+
+        <nav class="header-navbarDesktop">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -23,19 +33,21 @@
             </ul>
         </nav>
         <div class="header-btn">
-            <a class="btn-invite" href="/"></a>
+            <a class="btn-invite" href="/">Request Invite</a>
         </div>
     </header>
     <section class="principal">
         <div class="principal-into">
-            <img class="principal-img" src="./img/image-mockups.png" alt="">
+            <!-- <img class="principal-img" src="./img/image-mockups.png" alt=""> -->
         </div>
         <div class="principal-text">
             <h2>Next generation digital banking</h2>
             <p class="">
                 Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
             </p>
-            <a class="btn-invite" href="/">Request Invite</a>
+            <div class="principal-btn">
+                <a class="btn-invite" href="/">Request Invite</a>
+            </div>
         </div>
     </section>
     <section class="benefits">
@@ -142,7 +154,9 @@
     </section>
     <footer class="footer"> 
         <div class="footer-logo">
-            <img class="footer-img" src="./img/white-logo.svg" alt="logo" />
+            <div>
+                <img class="footer-img" src="./img/white-logo.svg" alt="logo" />
+            </div>
             <div class="social-medias">
                 <a class="social-media facebook" href="/"></a>
                 <a class="social-media youtube" href="/"></a>
