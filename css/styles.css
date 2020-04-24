@@ -27,6 +27,10 @@
     font-family: var(--font-family);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
